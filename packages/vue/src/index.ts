@@ -3,7 +3,7 @@ import {
   App,
   shallowRef,
   defineComponent,
-  isVue2,
+  isVue3,
   onUnmounted,
   h,
   PropType
@@ -19,7 +19,10 @@ export interface WatermarkProps extends WatermarkOptions {
 
 export const Watermark = defineComponent<WatermarkProps>({
   name: 'Watermark',
-  created: () => {
+  mounted() {
+
+  },
+  methods: {
 
   },
   setup: (props, { attrs }) => {
@@ -33,7 +36,6 @@ export const Watermark = defineComponent<WatermarkProps>({
     }
   },
   render: () => {
-    console.log(this.watermark);
     return h(
       'div',
       {
