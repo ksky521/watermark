@@ -11,7 +11,7 @@ importers:
       '@types/react': ^17
       '@types/react-dom': ^17
       '@umijs/plugin-antd': 0.15.0
-      '@umijs/utils': 3.5.20
+      '@umijs/utils': 3.5.21
       '@walrus/cli': 1.3.4
       '@walrus/plugin-release': 1.14.3
       '@walrus/plugin-test': 1.1.0
@@ -31,7 +31,7 @@ importers:
       '@types/react': 17.0.38
       '@types/react-dom': 17.0.11
       '@umijs/plugin-antd': 0.15.0_react-dom@17.0.2+react@17.0.2
-      '@umijs/utils': 3.5.20
+      '@umijs/utils': 3.5.21
       '@walrus/cli': 1.3.4
       '@walrus/plugin-release': 1.14.3_@walrus+cli@1.3.4
       '@walrus/plugin-test': 1.1.0
@@ -49,7 +49,7 @@ importers:
 
   packages/react:
     specifiers:
-      '@pansy/watermark': 2.0.8
+      '@pansy/watermark': 2.0.10
     dependencies:
       '@pansy/watermark': link:../core
 
@@ -4647,6 +4647,17 @@ packages:
       prettier: 2.2.1
     dev: true
 
+  /@umijs/deps/3.5.21:
+    resolution: {integrity: sha512-P/4KaOklePvkWV1qk3euNBNEhbkEkh+gQYhWxqGxPswAK60jCxHdCu6QHaCQB3y3H9tOh44teuP8Cls4/4tF2w==}
+    dependencies:
+      '@bloomberg/record-tuple-polyfill': 0.0.3
+      chokidar: 3.5.1
+      clipboardy: 2.3.0
+      esbuild: 0.12.15
+      jest-worker: 24.9.0
+      prettier: 2.2.1
+    dev: true
+
   /@umijs/plugin-analytics/0.2.2_umi@3.5.20:
     resolution: {integrity: sha512-dVDzUfgIdEwdCC6a5IsMYpIPI+bEZjBEqIhAvw9dic6Vk77w9RxQxyRfW11dDmdXLAwWphp22NntQNt1ejZPtg==}
     peerDependencies:
@@ -4717,7 +4728,7 @@ packages:
       '@umijs/plugin-analytics': 0.2.2_umi@3.5.20
       '@umijs/runtime': 3.5.20_react@17.0.2
       '@umijs/types': 3.5.20_react-dom@17.0.2+react@17.0.2
-      '@umijs/utils': 3.5.20
+      '@umijs/utils': 3.5.21
       copy-text-to-clipboard: 2.2.0
       deepmerge: 4.2.2
       dumi-assets-types: 1.0.0
@@ -4923,6 +4934,12 @@ packages:
     resolution: {integrity: sha512-Y0i27zZTCKoqdHHyTuebO/GOIY4gGLUwDFs1eoH+m4etPn+uRq0iax9KJOkelmax2K3YLsT4KbRwM1enlSsv3A==}
     dependencies:
       '@umijs/deps': 3.5.20
+    dev: true
+
+  /@umijs/utils/3.5.21:
+    resolution: {integrity: sha512-YBeugACAJHe/43uuKN2C+HWIfztqWhTGwFxRGE1XxCEIGCcJPFt8u8SMvw0wtE/kHT9JIz/tTpErJyo1QYJp2A==}
+    dependencies:
+      '@umijs/deps': 3.5.21
     dev: true
 
   /@umijs/utils/4.0.0-beta.14:
